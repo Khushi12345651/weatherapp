@@ -1,0 +1,91 @@
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.condition {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.temp-container {
+    text-align: center;
+}
+
+.temp {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.description {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.detail-item span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.detail-item strong {
+    font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
